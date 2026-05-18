@@ -1,4 +1,4 @@
-module github/minhducsun2002/unflac
+module github.com/minhducsun2002/unflac
 
 go 1.24.0
 
