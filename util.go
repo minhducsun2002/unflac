@@ -115,3 +115,11 @@ func findAudioFile(dir, name string) (string, bool) {
 	}
 	return "", false
 }
+
+func sliceRunes(s string, start, end int) string {
+	r := []rune(s)
+	if end > len(r) {
+		end = len(r)
+	}
+	return string(r[start:end])
+}

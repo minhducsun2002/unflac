@@ -59,7 +59,7 @@ func main() {
 	}
 
 	var err error
-	nameTmpl = template.New("-n").Funcs(template.FuncMap{"Elem": pathReplaceChars})
+	nameTmpl = template.New("-n").Funcs(template.FuncMap{"Elem": pathReplaceChars, "sliceRunes": sliceRunes})
 	if nameTmpl, err = nameTmpl.Parse(*nameTmplV); err != nil {
 		log.Fatal(err)
 	}
